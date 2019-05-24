@@ -13,9 +13,10 @@ public class CommunicateItem {
     private int articalCommCounts;
     private int articalLikeCounts;
     private int def;
+    private String userAccount;
 
     public CommunicateItem(String head_ico, String userName, int level, String title, String summary, String articalImg,
-                           String articalCate, String articalTime, int articalCommCounts, int articalLikeCounts,int def){
+                           String articalCate, String articalTime, int articalCommCounts, int articalLikeCounts,int def,String userAccount){
         this.head_icoPath = head_ico;
         this.userName = userName;
         this.level = level;
@@ -27,6 +28,15 @@ public class CommunicateItem {
         this.articalCommCounts = articalCommCounts;
         this.articalLikeCounts = articalLikeCounts;
         this.def = def;
+        this.userAccount = userAccount;
+    }
+
+    public String getUserAccount() {
+        return userAccount;
+    }
+
+    public void setUserAccount(String userAccount) {
+        this.userAccount = userAccount;
     }
 
     public int getId() {

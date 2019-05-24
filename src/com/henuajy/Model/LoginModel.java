@@ -205,8 +205,9 @@ public class LoginModel {
                 String articalTime = rs.getString("articalTime");
                 int articalCommCounts = rs.getInt("articalCommcounts");
                 int articalLikeCounts = rs.getInt("articalLikeCounts");
+                String userAccount = rs.getString("userAccount");
                 jsonValues.add(new CommunicateItem(head_icoPath,userName,level,title,summary,articalImgPath
-                                ,articalCate,articalTime,articalCommCounts,articalLikeCounts,def));
+                                ,articalCate,articalTime,articalCommCounts,articalLikeCounts,def,userAccount));
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -238,7 +239,7 @@ public class LoginModel {
         try{
             Class.forName(DRIVER);
             con = DriverManager.getConnection(URL,DBUNAME,DBUPWD);
-            pstmt = con.prepareStatement("insert into communitylist(head_icoPath,userName,level,title,summary,articalImgPath,articalCate,articalTime,articalCommcounts,articalLikeCounts,def) values (?,?,?,?,?,?,?,?,?,?,?)");
+            pstmt = con.prepareStatement("insert into communitylist(head_icoPath,userName,level,title,summary,articalImgPath,articalCate,articalTime,articalCommcounts,articalLikeCounts,def,userAccount) values (?,?,?,?,?,?,?,?,?,?,?,?)");
             pstmt.setString(1,communicateItem.getHead_icoPath());
             pstmt.setString(2,communicateItem.getUserName());
             pstmt.setInt(3,communicateItem.getLevel());
@@ -250,6 +251,7 @@ public class LoginModel {
             pstmt.setInt(9,communicateItem.getArticalCommCounts());
             pstmt.setInt(10,communicateItem.getArticalLikeCounts());
             pstmt.setInt(11,communicateItem.getDef());
+            pstmt.setString(12,communicateItem.getUserAccount());
             count = pstmt.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -274,6 +276,43 @@ public class LoginModel {
             }else{
                 return false;
             }
+        }
+    }
+
+    public static String queryByUserAccount(String userAccount,String columnIndex,String tableName){
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String beingReturnedRes = null;
+        try{
+            Class.forName(DRIVER);
+            con = DriverManager.getConnection(URL,DBUNAME,DBUPWD);
+            pstmt = con.prepareStatement("select "+columnIndex+" from "+tableName+" where account = ?");
+            pstmt.setString(1,userAccount);
+            rs = pstmt.executeQuery();
+            if (rs.next()){
+                beingReturnedRes = rs.getString(columnIndex);
+            }
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if(rs!=null){
+                    rs.close();
+                }
+                if (pstmt!=null){
+                    pstmt.close();
+                }
+                if (con!=null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            return beingReturnedRes;
         }
     }
 }
