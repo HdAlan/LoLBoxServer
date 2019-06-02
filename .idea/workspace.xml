@@ -7,17 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecac7770-ab59-4468-b3f3-c72fcb9af231" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/henuajy/Servlet/GetUserInfoServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Entity/CommunicateItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Entity/CommunicateItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Model/LoginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Model/LoginModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/InsertCommunityServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/InsertCommunityServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Entity/CommunicateItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Entity/CommunicateItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Model/LoginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Model/LoginModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Servlet/InsertCommunityServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Servlet/InsertCommunityServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/henuajy/Entity/CommunicateItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/henuajy/Entity/CommunicateItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Servlet/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LoLBoxServer/com/henuajy/Servlet/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/henuajy/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/henuajy/Entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/henuajy/Model/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/henuajy/Model/LoginModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/henuajy/Servlet/InsertCommunityServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/henuajy/Servlet/InsertCommunityServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/henuajy/Servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/henuajy/Servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/henuajy/Servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/henuajy/Servlet/RegisterServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,20 +39,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/InsertCommunityServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="26" column="57" selection-start-line="23" selection-start-column="14" selection-end-line="26" selection-end-column="57" />
+            <state relative-caret-position="435">
+              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/henuajy/Model/LoginModel.java">
+        <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="293" column="61" selection-start-line="293" selection-start-column="61" selection-end-line="293" selection-end-column="61" />
+            <state relative-caret-position="450">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/LoginServlet.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="39" column="73" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#1618#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/GetUserInfoServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -68,9 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/henuajy/Entity/User.java" />
-        <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/TestJson.java" />
         <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/GetDiscoverRecommentListServlet.java" />
         <option value="$PROJECT_DIR$/src/com/henuajy/Entity/DiscoverItem.java" />
@@ -84,8 +107,12 @@
         <option value="$PROJECT_DIR$/web/InsertCommunityItem.jsp" />
         <option value="$PROJECT_DIR$/src/com/henuajy/ChangeDbInService/InsertDoscoverItemObject.java" />
         <option value="$PROJECT_DIR$/src/com/henuajy/Entity/CommunicateItem.java" />
-        <option value="$PROJECT_DIR$/src/com/henuajy/Model/LoginModel.java" />
         <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/InsertCommunityServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/henuajy/Entity/User.java" />
+        <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/GetUserInfoServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/henuajy/Servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/henuajy/Model/LoginModel.java" />
       </list>
     </option>
   </component>
@@ -96,10 +123,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="131" />
-    <option name="y" value="242" />
-    <option name="width" value="1410" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1655" />
+    <option name="y" value="272" />
+    <option name="width" value="875" />
     <option name="height" value="1065" />
   </component>
   <component name="ProjectView">
@@ -107,7 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,6 +204,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -432,23 +459,26 @@
       <workItem from="1558605668422" duration="1073000" />
       <workItem from="1558661887896" duration="5189000" />
       <workItem from="1558672517818" duration="2799000" />
+      <workItem from="1558702681575" duration="713000" />
+      <workItem from="1559353988460" duration="5634000" />
+      <workItem from="1559462405816" duration="2025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52655000" />
+    <option name="totallyTimeSpent" value="61027000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="194" width="1128" height="852" extended-state="0" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8833333" visible="true" weight="0.24205607" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88128775" visible="true" weight="0.19510978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.11666667" side_tool="true" weight="0.3049505" />
+      <window_info id="Web" order="7" sideWeight="0.118712276" side_tool="true" visible="true" weight="0.19510978" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32964823" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.057344064" />
@@ -505,33 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
           <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/success_insertDiscover.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/InsertDiscoverItem.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -610,16 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/GetDiscoverRecommentListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="49" selection-start-line="20" selection-start-column="8" selection-end-line="27" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,10 +646,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/GetDiscoverRecommentListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="49" selection-start-line="20" selection-start-column="8" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/GetUserInfoServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/success_insertDiscover.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/GetUserInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/LoLBoxServer_war_exploded/WEB-INF/classes/com/henuajy/Servlet/LoginServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="39" column="73" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#1618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/henuajy/Model/LoginModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="293" column="61" selection-start-line="293" selection-start-column="61" selection-end-line="293" selection-end-column="61" />
+        <state relative-caret-position="628">
+          <caret line="164" column="52" lean-forward="true" selection-start-line="164" selection-start-column="52" selection-end-line="164" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -672,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/henuajy/Servlet/InsertCommunityServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="57" selection-start-line="23" selection-start-column="14" selection-end-line="26" selection-end-column="57" />
+        <state relative-caret-position="435">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
         </state>
       </provider>
     </entry>

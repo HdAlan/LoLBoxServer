@@ -19,8 +19,8 @@ public class LoginModel {
     private static String URL = "jdbc:mysql://localhost:3306/lolbox?&serverTimezone=UTC&useSSL=false";
 
     public static boolean login(User user){
-        String loginAccount = user.getLoginAccount();
-        String loginPassword = user.getLoginPassword();
+        String loginAccount = user.getAccount();
+        String loginPassword = user.getPassword();
         Connection con = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -62,8 +62,8 @@ public class LoginModel {
     }
 
     public static boolean register(User user){
-        String loginAccount = user.getLoginAccount();
-        String loginPassword = user.getLoginPassword();
+        String loginAccount = user.getAccount();
+        String loginPassword = user.getPassword();
         Connection con = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -71,7 +71,7 @@ public class LoginModel {
         try{
             Class.forName(DRIVER);
             con = DriverManager.getConnection(URL,DBUNAME,DBUPWD);
-            pstmt = con.prepareStatement("insert into userinfo values (?,?)");
+            pstmt = con.prepareStatement("insert into userinfo (account,password) values (?,?)");
             pstmt.setString(1,loginAccount);
             pstmt.setString(2,loginPassword);
             count = pstmt.executeUpdate();
@@ -139,6 +139,57 @@ public class LoginModel {
             }
         }
         return jsonValues;
+    }
+
+    public static JSONObject queryUserInfo(String a){
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        JSONObject jsonObject = new JSONObject();
+        try {
+            Class.forName(DRIVER);
+            con = DriverManager.getConnection(URL,DBUNAME,DBUPWD);
+            pstmt = con.prepareStatement("select*From userinfo where account=?");
+            pstmt.setString(1,a);
+            rs = pstmt.executeQuery();
+            if (rs.next()){
+                String account = rs.getString("account");
+                String password = rs.getString("password");
+                String headImgPath=rs.getString("headImgPath");
+                String uname=rs.getString("uname");
+                int level=rs.getInt("level");
+                int focus=rs.getInt("focus");
+                int fans=rs.getInt("fans");
+                int thumbs=rs.getInt("thumbsup");
+                jsonObject.put("account",account);
+                jsonObject.put("password",password);
+                jsonObject.put("headImgPath",headImgPath);
+                jsonObject.put("uname",uname);
+                jsonObject.put("level",level);
+                jsonObject.put("focus",focus);
+                jsonObject.put("fans",fans);
+                jsonObject.put("thumbs",thumbs);
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            try{
+                if (rs!=null){
+                    rs.close();
+                }
+                if (pstmt!=null){
+                    pstmt.close();
+                }
+                if (con!=null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return jsonObject;
     }
 
     public static boolean InsertDiscoverItem(DiscoverItem discoverItem){
