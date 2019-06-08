@@ -22,12 +22,19 @@ public class RegisterServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         String registerAccount = request.getParameter("registerAccount");
         String registerPassword = request.getParameter("registerPassword");
-        User registerUser = new User(registerAccount,registerPassword);
+        String uname = request.getParameter("uname");
+        String email = request.getParameter("email");
+        User registerUser = new User(registerAccount,registerPassword,uname,email);
         boolean rs = LoginModel.register(registerUser);
         System.out.println("注册账号："+registerAccount+",注册密码："+registerPassword+",注册结果"+rs);
         //通过PrintWriter返回给客户端操作结果
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=UTF-8");
         PrintWriter writer = response.getWriter();
-        writer.print(rs);
+        if (rs){
+            JSONObject userObject = LoginModel.queryUserInfo(registerAccount);
+            writer.print(userObject);
+        }
 
     }
 }

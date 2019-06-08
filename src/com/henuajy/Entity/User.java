@@ -7,9 +7,16 @@ public class User {
     private String headImgPath;
     private String uname;
     private int level;
+    private String email;
     public User(String account,String password){
         this.account = account;
         this.password = password;
+    }
+    public User(String account,String password,String uname,String email){
+        this.account = account;
+        this.password = password;
+        this.uname = uname;
+        this.email = email;
     }
 
     public User(String account,String headImgPath,String uname,int level){
@@ -19,7 +26,13 @@ public class User {
         this.level = level;
     }
 
+    public String getEmail() {
+        return email;
+    }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getAccount() {
         return account;

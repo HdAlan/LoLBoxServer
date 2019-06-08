@@ -20,6 +20,7 @@ public class InsertCommunityServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
+
         int defCode = Integer.parseInt(request.getParameter("def"));
         String userAccount = request.getParameter("userAccount");
         String title = request.getParameter("title");

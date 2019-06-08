@@ -14,9 +14,11 @@ public class CommunicateItem {
     private int articalLikeCounts;
     private int def;
     private String userAccount;
-
-    public CommunicateItem(String head_ico, String userName, int level, String title, String summary, String articalImg,
+    private int commentId;
+    private String articalAccount;
+    public CommunicateItem(int id,String head_ico, String userName, int level, String title, String summary, String articalImg,
                            String articalCate, String articalTime, int articalCommCounts, int articalLikeCounts,int def,String userAccount){
+        this.id = id;
         this.head_icoPath = head_ico;
         this.userName = userName;
         this.level = level;
@@ -29,6 +31,48 @@ public class CommunicateItem {
         this.articalLikeCounts = articalLikeCounts;
         this.def = def;
         this.userAccount = userAccount;
+    }
+    public CommunicateItem(String head_ico, String userName, int level, String title, String summary, String articalImg,
+                           String articalCate, String articalTime, int articalCommCounts, int articalLikeCounts,int def,String userAccount){
+        this.id = id;
+        this.head_icoPath = head_ico;
+        this.userName = userName;
+        this.level = level;
+        this.title = title;
+        this.summary = summary;
+        this.articalImgPath = articalImg;
+        this.articalCate = articalCate;
+        this.articalTime = articalTime;
+        this.articalCommCounts = articalCommCounts;
+        this.articalLikeCounts = articalLikeCounts;
+        this.def = def;
+        this.userAccount = userAccount;
+    }
+    public CommunicateItem(String head_icoPath,String userName,int level,int commentId,String userAccount,String articalAccount, String summary,int articalId){
+        this.head_icoPath = head_icoPath;
+        this.userName = userName;
+        this.level = level;
+        this.commentId = commentId;
+        this.userAccount = userAccount;
+        this.articalAccount = articalAccount;
+        this.summary = summary;
+        this.id = articalId;
+    }
+
+    public String getArticalAccount() {
+        return articalAccount;
+    }
+
+    public void setArticalAccount(String articalAccount) {
+        this.articalAccount = articalAccount;
+    }
+
+    public int getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
     }
 
     public String getUserAccount() {
